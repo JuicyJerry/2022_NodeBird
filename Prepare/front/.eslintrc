@@ -1,0 +1,29 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module", // import, export
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": { // 환경
+    "browser": true, // 브라우저에서 동작
+    "node": true, // 노드 동작
+    "es6": true // es6 동작
+  },
+  "extends": [ // 남들이 만들어 놓은 규칙을 따르겠다, 실제적인 규칙인데 너그럽다
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "import",
+    "react",
+    "react-hooks"
+  ],
+  "rules": {
+    "no-unused-vars": 1,
+    "no-console": 1,
+    "no-use-before-define": 1,
+    "no-redeclare": 1,
+  }
+}
